@@ -9,7 +9,7 @@ namespace Magellanic.Camera
 {
     public class CameraDevice : ICameraDevice
     {
-        public MediaCapture ViewFinder { get; set; }
+        public MediaCapture ViewFinder { get; set; } = new MediaCapture();
 
         public void Dispose()
         {
